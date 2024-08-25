@@ -1,11 +1,15 @@
 import React from "react";
 import "./Genre.scss"
 const Genre = () => {
+  let genres = ['Drama', 'Thriller', 'Supernatural']
+  let genreEl = genres.map((item, index)=> {
+    return(
+        <p key={index} href="genre"> {item}</p>
+    )
+  })
   return (
     <div className="genres">
-      <p href="genres__drama">Drama |</p>
-      <p href="genres__thriller">Thriller |</p>
-      <p href="genres__supernatural">Supernatural</p>
+      {genreEl}
     </div>
   );
 };

@@ -9,13 +9,14 @@ import AgeMark from "./components/AgeMark"
 function App() {
   let filmTitle = 'Stranger Things';
   let filmDesc = 'In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.'
+  let countOfStars = '5'
   return (
     <div className="container">
     <Header></Header>
      <div className="main-content">
       <Genre></Genre>
       <FilmDesc title = {filmTitle} desc = {filmDesc}></FilmDesc>
-      <Rating></Rating>
+      <Rating rating = {countOfStars}></Rating>
       <ButtonBlock></ButtonBlock>
       <Popular></Popular>
      </div>
